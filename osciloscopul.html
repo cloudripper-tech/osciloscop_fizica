@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prezentare Osciloscop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="presentation-container">
+        <h1 class="text-gray-900">Osciloscopul:<br>Ochiul Electric al Inginerului</h1>
+
+        <div class="section">
+            <h2>Ce este un osciloscop?</h2>
+            <p>Un osciloscop este un instrument electronic de măsură care permite vizualizarea grafică a semnalelor electrice variabile în timp. Acesta afișează o reprezentare bidimensională a unui semnal, unde axa orizontală (X) reprezintă timpul, iar axa verticală (Y) reprezintă tensiunea.</p>
+            <p>Practic, un osciloscop "desenează" forma de undă a unui semnal electric, permițând inginerilor și tehnicienilor să analizeze caracteristici precum amplitudinea, frecvența, perioada, timpul de creștere/descreștere și distorsiunile.</p>
+            <div class="image-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Frsc%2Fimage%2Fupload%2Fb_rgb%3AFFFFFF%2Cc_pad%2Cdpr_2.0%2Cf_auto%2Ch_300%2Cq_auto%2Cw_600%2Fc_pad%2Ch_300%2Cw_600%2FR7250485-01&f=1&nofb=1&ipt=5206d65d4d5dda010b135079bac85c0616b764d383927256c4595f3aca9657c0" alt="Imagine cu un osciloscop digital de la Keysight Technologies modern">
+                <p class="image-caption">Un osciloscop digital modern cu afișajul unei forme de undă.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>De ce este important?</h2>
+            <p>Osciloscopul este un instrument indispensabil în electronică și electrotehnică datorită multiplelor sale utilizări:</p>
+            <ul>
+                <li><strong>Diagnosticare și depanare:</strong> Identifică rapid problemele, erorile și anomaliile din circuitele electronice.</li>
+                <li><strong>Analiză și înțelegere:</strong> Oferă o perspectivă vizuală asupra comportamentului semnalelor, ajutând la înțelegerea funcționării circuitelor.</li>
+                <li><strong>Măsurare precisă:</strong> Permite măsurarea exactă a parametrilor semnalelor, cum ar fi frecvența, perioada, amplitudinea de vârf la vârf, valorile DC și AC.</li>
+                <li><strong>Dezvoltare și testare:</strong> Esențial în faza de proiectare și testare a prototipurilor de dispozitive electronice.</li>
+                <li><strong>Educație și cercetare:</strong> Un instrument fundamental pentru învățarea și explorarea principiilor electronice.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Cum funcționează? (Principii de bază)</h2>
+            <p>Deși există osciloscoape analogice și digitale, principiile de bază sunt similare:</p>
+            <h3>1. Intrare semnal</h3>
+            <p>Semnalul electric care urmează să fie analizat este aplicat la una dintre intrările osciloscopului (canale).</p>
+            <h3>2. Amplificare și atenuare</h3>
+            <p>Semnalul este ajustat la un nivel adecvat pentru afișare, prin amplificare (pentru semnale mici) sau atenuare (pentru semnale mari).</p>
+            <h3>3. Baza de timp (Axa X)</h3>
+            <p>Un generator de baleiaj intern produce o tensiune care variază liniar în timp, determinând mișcarea punctului luminos (sau a eșantionării digitale) de la stânga la dreapta pe ecran, la o viteză constantă. Aceasta stabilește scala de timp pe orizontală.</p>
+            <h3>4. Deflexie verticală (Axa Y)</h3>
+            <p>Tensiunea semnalului de intrare este aplicată unui sistem de deflexie verticală, care deviază fasciculul de electroni (în analogice) sau poziționează punctele eșantionate (în digitale) pe verticală, proporțional cu amplitudinea semnalului.</p>
+            <h3>5. Declanșare (Triggering)</h3>
+            <p>Un circuit de declanșare sincronizează baleiajul orizontal cu un anumit punct al semnalului de intrare, asigurând o imagine stabilă și repetitivă a formei de undă pe ecran.</p>
+            <h3>6. Afișare</h3>
+            <p>Rezultatul este o reprezentare grafică a formei de undă a semnalului pe ecranul osciloscopului.</p>
+            <div class="image-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2FCCoTt.jpg&f=1&nofb=1&ipt=b5bb2b4bdd1aa806efa4bdff4be79f71f361a8bba6c425b9e15a734c69c6d902" alt="Imagine cu o formă de undă sinusoidală pe ecranul unui osciloscop">
+                <p class="image-caption">Exemplu de formă de undă sinusoidală afișată pe ecran.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Tipuri de osciloscoape</h2>
+            <p>Există două categorii principale de osciloscoape:</p>
+            <h3>Osciloscoape Analogice (CRO - Cathode Ray Oscilloscope)</h3>
+            <ul>
+                <li>Utilizează un tub catodic (CRT) pentru a afișa direct semnalul.</li>
+                <li>Semnalul de intrare controlează direct deflexia fasciculului de electroni.</li>
+                <li>Avantaje: Afișare în timp real, ideal pentru semnale rapide și tranzitorii.</li>
+                <li>Dezavantaje: Fără memorie, mai puțin precise pentru măsurători complexe, sensibile la zgomot.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ohmsite.com%2Fwp-content%2Fuploads%2F2023%2F07%2F1280px-Tektronix_Oscilloscope_475A-1024x526.jpg&f=1&nofb=1&ipt=da8238197984351eeec7173651f91a6f3022f23a9d27d1fb2d0c00ec12b178d1" alt="Imagine cu un osciloscop analogic vechi">
+                <p class="image-caption">Un osciloscop analogic clasic cu tub catodic (CRT).</p>
+            </div>
+            <h3>Osciloscoape Digitale (DSO - Digital Storage Oscilloscope)</h3>
+            <ul>
+                <li>Convertesc semnalul analogic în date digitale folosind un convertor analog-digital (ADC).</li>
+                <li>Datele digitale sunt stocate în memorie și apoi procesate și afișate pe un ecran LCD.</li>
+                <li>Avantaje: Capacitate de stocare a formelor de undă, funcții avansate de analiză (FFT, măsurători automate), conectivitate la PC, precizie ridicată.</li>
+                <li>Dezavantaje: Pot rata evenimente scurte între eșantioane (aliasing), cost mai mare.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.eleshop.nl%2Fmage%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F10%2Fimage%2F1920x%2F040ec09b1e35df139433887a97daa66f%2Fm%2Fs%2Fmso2102a.png&f=1&nofb=1&ipt=dba23d7b752aacfd024f555f16152ed3492b867e1916c0bf8c10247f150387b8" alt="Imagine cu un osciloscop digital modern, cu multe funcții">
+                <p class="image-caption">Un osciloscop digital modern cu interfață grafică avansată.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Parametri importanți</h2>
+            <p>La alegerea și utilizarea unui osciloscop, este crucial să înțelegi următorii parametri:</p>
+            <ul>
+                <li><strong>Lățimea de bandă (Bandwidth):</strong> Reprezintă cea mai înaltă frecvență a semnalului pe care osciloscopul o poate măsura cu acuratețe (de obicei, la o atenuare de -3dB). Cu cât lățimea de bandă este mai mare, cu atât mai rapid și mai detaliat poate fi vizualizat un semnal.</li>
+                <li><strong>Rata de eșantionare (Sample Rate):</strong> (Doar pentru DSO) Numărul de probe digitale pe secundă pe care osciloscopul le preia. O rată de eșantionare mai mare înseamnă o reconstrucție mai fidelă a semnalului.</li>
+                <li><strong>Numărul de canale:</strong> Câte semnale independente pot fi vizualizate și comparate simultan (ex: 2 canale, 4 canale).</li>
+                <li><strong>Sensibilitatea verticală (Vertical Sensitivity):</strong> Măsoară cât de multă tensiune este necesară pentru a produce o deviație de o diviziune pe axa verticală (ex: 1mV/div - 10V/div).</li>
+                <li><strong>Baza de timp (Time Base):</strong> Setează cât timp reprezintă o diviziune pe axa orizontală (ex: 1ns/div - 10s/div).</li>
+                <li><strong>Adâncimea memoriei (Memory Depth):</strong> (Doar pentru DSO) Cât de multe puncte de date poate stoca osciloscopul pentru o singură achiziție. O memorie mai adâncă permite capturarea unor perioade mai lungi de timp la o rată de eșantionare ridicată.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Aplicații practice</h2>
+            <p>Osciloscoapele sunt utilizate într-o gamă largă de domenii și aplicații, incluzând:</p>
+            <ul>
+                <li><strong>Electronică de consum:</strong> Repararea televizoarelor, telefoanelor, sistemelor audio.</li>
+                <li><strong>Telecomunicații:</strong> Analiza semnalelor radio, TV, rețele de date.</li>
+                <li><strong>Automotive:</strong> Diagnosticarea sistemelor electronice ale vehiculelor (senzori, ECU-uri).</li>
+                <li><strong>Medicină:</strong> Monitorizarea semnalelor biologice (ECG, EEG).</li>
+                <li><strong>Industrie:</strong> Controlul proceselor, monitorizarea senzorilor și actuatorilor.</li>
+                <li><strong>Cercetare și dezvoltare:</strong> Experimente științifice, dezvoltarea de noi tehnologii.</li>
+            </ul>
+            <div class="image-container">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgomagcdn.ro%2Fdomains%2Fbitmi.ro%2Ffiles%2Ffiles%2Fbitmi-ce-este-un-osciloscop-digital-si-cand-iti-poate-fi-de-folos-electronica-semnal-amplitudine-frecventa-voltaj-instrument-de-masura-scule-si-unelte-testate-p1-66370.png&f=1&nofb=1&ipt=848e983593b76f9c052f3a33bf4588cdbcd5c1b3a87256e8e73694d0733bb70e" alt="Imagine cu un osciloscop folosit într-un laborator de electronică">
+                <p class="image-caption">Utilizarea unui osciloscop într-un laborator de electronică.</p>
+            </div>
+        </div>
+
+        <div class="section text-center">
+            <h2>Concluzie</h2>
+            <p>Osciloscopul este mult mai mult decât un simplu instrument de măsură; este o fereastră către lumea invizibilă a semnalelor electrice. Capacitatea sa de a vizualiza, analiza și măsura forme de undă îl face un echipament indispensabil pentru orice inginer, tehnician sau pasionat de electronică.</p>
+            <p class="mt-4 text-gray-700 font-semibold">Sperăm că această prezentare v-a oferit o imagine clară asupra importanței și funcționalității osciloscopului!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Custom font import for Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    /* Gradient background for a modern look */
+    background: linear-gradient(to right bottom, #4f46e5, #8b5cf6, #d8b4fe);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top for scrollability */
+    padding: 2rem 0;
+}
+
+.presentation-container {
+    max-width: 90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    border-radius: 1.5rem; /* More rounded corners */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    padding: 2.5rem;
+    margin: 2rem auto; /* Center with margin */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /* Space between sections */
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+h1 {
+    font-size: 3.5rem; /* Larger title */
+    font-weight: 700;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.25rem; /* Larger section titles */
+    font-weight: 600;
+    color: #4f46e5; /* Primary color for headings */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #6d28d9; /* Secondary color for subheadings */
+    margin-bottom: 1rem;
+}
+
+p, ul {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.image-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Aici era problema: .image-container img era concatenat cu -container img { */
+.image-container img { /* Selectorul corect este aici */
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.image-caption {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .presentation-container {
+        padding: 1.5rem;
+        margin: 1rem auto;
+        max-width: 95%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p, ul {
+        font-size: 1rem;
+    }
+}
