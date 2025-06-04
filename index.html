@@ -115,7 +115,28 @@
             <h2>Concluzie</h2>
             <p>Osciloscopul este mult mai mult decât un simplu instrument de măsură; este o fereastră către lumea invizibilă a semnalelor electrice. Capacitatea sa de a vizualiza, analiza și măsura forme de undă îl face un echipament indispensabil pentru orice inginer, tehnician sau pasionat de electronică.</p>
             <p class="mt-4 text-gray-700 font-semibold">Sperăm că această prezentare v-a oferit o imagine clară asupra importanței și funcționalității osciloscopului!</p>
+
+            <!-- Butonul de redirecționare -->
+            <button class="redirect-button" onclick="redirectToPage()">
+                Simulator de osciloscop
+            </button>
+            <p class="image-caption mt-2">Apăsați butonul pentru a încerca un simulator de osciloscop.</p>
         </div>
     </div>
+
+    <script>
+        // Function to redirect to another page on the same site
+        function redirectToPage() {
+            // Change this URL to the relative path of the desired page on your site.
+            // For example, if your other page is named "despre.html" and is in the same folder:
+            window.location.href = "osciloscope_sim/index.html";
+
+            // If it's in a subfolder, e.g., "sections/contact.html":
+            // window.location.href = "sections/contact.html";
+
+            // If you want to go to the site's root (homepage):
+            // window.location.href = "/";
+        }
+    </script>
 </body>
 </html>

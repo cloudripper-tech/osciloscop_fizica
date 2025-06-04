@@ -99,6 +99,25 @@ li {
     text-align: center;
 }
 
+/* Styles for the redirect button */
+.redirect-button {
+    display: inline-block; /* To allow margins and padding */
+    background-color: #10b981; /* An attractive green color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    text-decoration: none; /* No underline for link */
+    font-weight: 600;
+    margin-top: 1.5rem; /* Space above */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.redirect-button:hover {
+    background-color: #059669; /* A darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .presentation-container {
@@ -118,4 +137,9 @@ li {
     p, ul {
         font-size: 1rem;
     }
+    .redirect-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
 }
